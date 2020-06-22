@@ -1,0 +1,182 @@
+@import url("https://use.typekit.net/cyb5sex.css");
+
+$font: ff-basic-gothic-pro, sans-serif;
+$title: oskar, sans-serif;
+$bg: linear-gradient(65deg, #feca05 , #ed6b1e);
+$yellow: #feca05;
+$blue: #26336c;
+$orange: #ed6b1e;
+$inner-shadow: inset 0 0 10px #0005;
+
+*, html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $bg;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: $title;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+h1.link {
+    padding: 1rem;
+    background: linear-gradient(65deg, $blue, $orange);
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $yellow;
+    transition: all .5s ease-in-out;
+}
+
+a:hover {
+    color: $orange;
+}
+
+.button {
+    background: $blue;
+    color: $yellow;
+    padding: .5rem;
+    font-family: $title;
+    margin: 1rem;
+}
+
+.register, .page-item {
+    background: #f2f4f7;
+    padding: 2rem 3rem;
+    font-family: $font;
+    color: $blue;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+input {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    color: $blue;
+    border: 1px solid #181D27;
+    border-radius: 2rem;
+    box-shadow: $inner-shadow;
+}
+
+.form-pages {
+    display: grid;
+    grid-template-columns: repeat(7, 100vw);
+}
+
+.page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page-item, .main {
+    animation: fade-in .5s backwards;
+}
+
+.page1 {
+    grid-column: 1/2;
+}
+
+.page2 {
+    grid-column: 2/3;
+}
+.page3 {
+    grid-column: 3/4;
+}
+.page4 {
+    grid-column: 4/5;
+}
+.page5 {
+    grid-column: 5/6;
+}
+.page6 {
+    grid-column: 6/7;
+}
+
+.page7 {
+    grid-column: 7/8;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.nav-item.some a {
+    background: transparent;
+} 
+
+.nav-item a {
+    width: 200px;
+    display: inline-block;
+    padding: 1rem;
+    background-color: $blue;
+    color: $yellow;
+    margin: 1rem;
+}
+
+.nav-item.left a {
+    border-radius: 30px 10px 10px 30px;
+    text-align: left;
+}
+
+.nav-item.right a {
+    border-radius: 10px 30px 30px 10px;
+    text-align: right;
+}
+.navigation {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background: $yellow;
+    color: $blue;
+    box-shadow: 0px -5px 10px #0005;
+}
+
+.navigation:hover {
+    background: $orange;
+    color: $blue;
+}
+
+progress[value] {
+    width: 100%;
+    height: 6p0px;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
